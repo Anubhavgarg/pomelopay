@@ -4,11 +4,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const transaction_1 = require("./routes/transaction");
 const app = express_1.default();
 const port = 8080; // default port to listen
 // define a route handler for the default home page
 app.get("/", (req, res) => {
     res.send("Hello world!");
+});
+app.get("/transaction", (req, res) => {
+    const getTransactionData = transaction_1.transaction();
+    res.send(getTransactionData);
 });
 // start the Express server
 app.listen(port, () => {
