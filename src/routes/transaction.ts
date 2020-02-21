@@ -5,5 +5,9 @@ const transaction = () => {
     const transactionData = Transaction.findByQuery();
     return transactionData
 }
+const createTransaction =async(body: any) => {
+        const transactionData = await Transaction.Insert(body);
+        return transactionData
+}
 
-export { transaction };
+export { transaction ,createTransaction};

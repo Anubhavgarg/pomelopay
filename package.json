@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
-    "build": "tsc",
+    "build": "npm i && tsc",
     "prestart": "npm run build",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Anubhavgarg/pomelopay#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mocha": "^7.0.1",
     "mongoose": "^5.9.1",
