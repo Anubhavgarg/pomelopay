@@ -1,0 +1,16 @@
+{
+    "response": [
+        {
+            "name": "kaushal",
+            "rank": 1,
+            "available": true,
+            "_id": "123"
+        },
+        {
+            "name": "Anubhav",
+            "rank": 2,
+            "available": true,
+            "_id": "321"
+        }
+    ]
+}
